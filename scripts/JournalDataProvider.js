@@ -7,22 +7,7 @@
  */
 
 // This is the original data.
-const journal = [
-    {
-        id: 1,
-        date: "07/24/2025",
-        concept: "HTML & CSS",
-        entry: "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-        mood: "Ok"
-    } , 
-    {
-        id: 2,
-        date: "08/20/2020",
-        concept: "HTML & CSS",
-        entry: "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-        mood: "Ok"
-    }
-]
+
 
 /*
     You export a function that provides a version of the

@@ -26,7 +26,7 @@ export const getEntries = () => {
     return fetch("http://localhost:8088/entries") // Fetch from the API
         .then(reponse => reponse.json())  // Parse as JSON
         .then(entries => {
-            console.log(entries)
+            journal = entries
 
             // What should happen when we finally have the array?
         })

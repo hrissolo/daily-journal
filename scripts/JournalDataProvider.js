@@ -7,23 +7,8 @@
  */
 
 // This is the original data.
-const journal = [
-    {
-        id: 1,
-        date: "07/24/2025",
-        concept: "HTML & CSS",
-        entry: "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-        mood: "Ok"
-    } , 
-    {
-        id: 2,
-        date: "08/20/2020",
-        concept: "HTML & CSS",
-        entry: "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-        mood: "Ok"
-    }
-]
 
+let journal = []
 /*
     You export a function that provides a version of the
     raw data in the format that you want
@@ -34,4 +19,15 @@ export const useJournalEntries = () => {
             Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
     )
     return sortedByDate
+}
+
+
+export const getEntries = () => {
+    return fetch("http://localhost:8088/entries") // Fetch from the API
+        .then(reponse => reponse.json())  // Parse as JSON
+        .then(entries => {
+            journal = entries
+
+            // What should happen when we finally have the array?
+        })
 }

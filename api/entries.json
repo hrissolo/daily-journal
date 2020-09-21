@@ -1,18 +1,32 @@
 {
-    "entries": [
-        {
-            "id": 1,
-            "date": "07/24/2025",
-            "concept": "HTML & CSS",
-            "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-            "mood": "Ok"
-        } , 
-        {
-            "id": 1,
-            "date": "07/24/2025",
-            "concept": "HTML & CSS",
-            "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-            "mood": "Ok"
-        }
-    ]
+  "entries": [
+    {
+      "date": "2020-09-21",
+      "concept": "yes",
+      "entry": "heether",
+      "mood": "prepared",
+      "id": 1
+    },
+    {
+      "date": "2020-09-21",
+      "concept": "looking over APIs ",
+      "entry": "Do you remember?",
+      "mood": "confident",
+      "id": 2
+    },
+    {
+      "date": "2020-09-02",
+      "concept": "another",
+      "entry": "one",
+      "mood": "confident",
+      "id": 3
+    },
+    {
+      "date": "2020-09-09",
+      "concept": "lets see",
+      "entry": "what happens",
+      "mood": "confident",
+      "id": 4
+    }
+  ]
 }

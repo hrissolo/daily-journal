@@ -1,16 +1,29 @@
-import { getEntries, useJournalEntries } from "./JournalDataProvider.js";
+import { getEntries, useJournalEntries, saveEntry } from "./JournalDataProvider.js";
+
 /*
 	A bunch of input boxes related to the note information
 */
-const eventHub = document.querySelector("#main");
-const contentTarget = document.querySelector(".main");
+const eventHub = document.querySelector("main");
+const contentTarget = document.querySelector(".mainContent");
 
 
 eventHub.addEventListener("click", clickEvent => {
 	if(clickEvent.target.id === "recordJournal"){
+        const entryDate = document.querySelector("#journalDate")
+        const entryConcept = document.querySelector("#conceptsText")
+        const entryEntry = document.querySelector("#textarea")
+        const entryMood =  document.querySelector("#mood")
 
-		const noteContent = document.querySelector(".entries")
+        
+            const newEntry = {
+                date: entryDate.value,
+                concept: entryConcept.value,
+                entry: entryEntry.value,
+                mood: entryMood.value
+            }
 
+            saveEntry(newEntry)
+            // render()
 	}
 })
 
@@ -29,7 +42,7 @@ const render = () => {
         </fieldset>
         <fieldset>
             <label for="entryText">journal entry</label>
-            <textarea></textarea>     
+            <textarea id="textarea"></textarea>     
         </fieldset>
         <fieldset>                  
             <label for="mood">mood</label>
@@ -42,7 +55,7 @@ const render = () => {
                 <option value="confused">totally confused</option>
             </select>                    
         </fieldset>            
-        <button class="recordJournal" onclick="">record journal :)</button>           
+        <button id="recordJournal" type="button">record journal :)</button>           
     </form>
 </section>
     `

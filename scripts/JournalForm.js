@@ -27,10 +27,10 @@ eventHub.addEventListener("click", clickEvent => {
 	}
 })
 
-
+//actual form on html
 const render = () => {
     contentTarget.innerHTML = `
-    <section class="form">
+    <section id="form">
     <form action="">
         <fieldset>
             <label for="journalDate">date of entry</label>
@@ -67,6 +67,5 @@ export const JournalFormComponent = () => {
     getEntries()
     .then(() => {
         render(useJournalEntries())
-    }
-    )
+    })
 }

@@ -5,4 +5,27 @@ fieldset {
 
 footer {
     background-color: cornflowerblue;
+    text-align: center;
+    padding: 1em;
+    font-family: 'Noto Serif', serif;
+}
+
+.journalEntry {
+    border: solid 1px;
+    padding: 1em 2em 1em 2em;
+    margin: 1px;
+    font-family: 'Noto Serif', serif;
+}
+
+#form {
+    font-family: 'Noto Serif', serif;
+    background-color: cornflowerblue;
+}
+
+h2 {
+    font-family: 'Noto Serif', serif;
+}
+
+header {
+    text-align: center;
 }

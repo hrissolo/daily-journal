@@ -20,6 +20,7 @@ const dispatchStateChangeEvent = () => {
 }
 
 
+
 export const getEntries = () => {
     return fetch("http://localhost:8088/entries") // Fetch from the API
         .then(reponse => reponse.json())  // Parse as JSON aka turns API into js
@@ -46,7 +47,7 @@ export const useJournalEntries = () => {
 
 
 
-export const saveEntry = entry => {
+export const saveEntry = (entry) => {
     return fetch("http://localhost:8088/entries", {
         method: "POST",
         headers: {

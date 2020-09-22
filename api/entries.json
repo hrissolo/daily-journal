@@ -2,31 +2,17 @@
   "entries": [
     {
       "date": "2020-09-21",
-      "concept": "yes",
-      "entry": "heether",
+      "concept": "woot",
+      "entry": "got my notes saving!",
       "mood": "prepared",
       "id": 1
     },
     {
-      "date": "2020-09-21",
-      "concept": "looking over APIs ",
-      "entry": "Do you remember?",
-      "mood": "confident",
+      "date": "2020-09-22",
+      "concept": "Trial & error",
+      "entry": "deleted the reposting of entries by adding \"\" to the inner HTML",
+      "mood": "stuck",
       "id": 2
-    },
-    {
-      "date": "2020-09-02",
-      "concept": "another",
-      "entry": "one",
-      "mood": "confident",
-      "id": 3
-    },
-    {
-      "date": "2020-09-09",
-      "concept": "lets see",
-      "entry": "what happens",
-      "mood": "confident",
-      "id": 4
     }
   ]
 }
